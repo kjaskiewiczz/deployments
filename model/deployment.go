@@ -160,6 +160,7 @@ func (d *Deployment) IsNotPending() bool {
 		d.Stats[DeviceDeploymentStatusAlreadyInst] > 0 ||
 		d.Stats[DeviceDeploymentStatusFailure] > 0 ||
 		d.Stats[DeviceDeploymentStatusAborted] > 0 ||
+		d.Stats[DeviceDeploymentStatusDecommissioned] > 0 ||
 		d.Stats[DeviceDeploymentStatusNoArtifact] > 0 {
 
 		return true

@@ -228,6 +228,7 @@ func TestDeploymentIs(t *testing.T) {
 		DeviceDeploymentStatusNoArtifact,
 		DeviceDeploymentStatusAlreadyInst,
 		DeviceDeploymentStatusAborted,
+		DeviceDeploymentStatusDecommissioned,
 	}
 	for _, as := range finished {
 		t.Logf("checking finished deployment stat %s", as)
