@@ -374,11 +374,11 @@ func (i *DeploymentNextRequest) Validate() error {
 }
 
 func (i *DeploymentNextRequest) String() string {
-	json, err := json.Marshal(i)
+	j, err := json.Marshal(i)
 	if err != nil {
 		return "invalid request format"
 	}
-	return string(json)
+	return string(j)
 }
 
 func (i *InstalledDeviceDeployment) Validate() error {
